@@ -1,6 +1,5 @@
-  //@ts-nocheck
- import { a, defineData } from '@aws-amplify/backend';
-//this is compatiable code, for task tracker...
+import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
+
 const schema = a.schema({
   ActivityEvent: a.model({
     id: a.id(),
@@ -10,11 +9,18 @@ const schema = a.schema({
     userId: a.string(),
     timestamp: a.datetime().required(),
   })
-  .authorization([a.allow.public()])
+  .authorization((allow) => [allow.publicApiKey()])
 });
+
+export type Schema = ClientSchema<typeof schema>;
 
 export const data = defineData({
   schema,
+  authorizationModes: {
+    defaultAuthorizationMode: 'apiKey',
+    apiKeyAuthorizationMode: {
+      expiresInDays: 30,
+    },
+  },
 });
-
 
