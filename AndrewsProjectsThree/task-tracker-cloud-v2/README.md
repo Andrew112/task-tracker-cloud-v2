@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ## Package Manager - Yarn Installation
 
-This project can be managed using [Yarn](https://yarnpkg.com/), a fast, reliable, and secure dependency management tool.
+This project uses [Yarn](https://yarnpkg.com/) as its package manager, a fast, reliable, and secure dependency management tool.
 
 ### Installing Yarn
 
@@ -35,8 +35,8 @@ choco install yarn
 
 **Linux (Debian/Ubuntu):**
 ```bash
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yarn-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/yarn-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update && sudo apt install yarn
 ```
 

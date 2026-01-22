@@ -33,9 +33,10 @@ yarn --version
 
 ## Getting Started
 
-After installing Yarn, navigate to the project directory and install dependencies:
+After installing Yarn, install dependencies in the project directory:
 
 ```bash
+# Navigate to the project directory (adjust path based on your setup)
 cd AndrewsProjectsThree/task-tracker-cloud-v2
 yarn install
 ```
