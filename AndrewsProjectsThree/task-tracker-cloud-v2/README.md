@@ -173,7 +173,7 @@ Deploys your backend to a production environment.
 **Error: Access Denied**
 - **Solution:** Ensure your AWS account has the necessary permissions to create Amplify resources.
 
-For more information, visit the [official Yarn documentation](https://yarnpkg.com/getting-started).
+## React + Vite Plugins
 
 Currently, two official plugins are available:
 
