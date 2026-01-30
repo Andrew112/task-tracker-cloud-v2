@@ -72,27 +72,22 @@ This application demonstrates proficiency in building **modern, cloud-native web
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Andrew112/task-tracker-cloud-v2.git
-   cd task-tracker-cloud-v2
+   cd task-tracker-cloud-v2/AndrewsProjectsThree/task-tracker-cloud-v2
    ```
 
-2. **Navigate to project directory**
-   ```bash
-   cd AndrewsProjectsThree/task-tracker-cloud-v2
-   ```
-
-3. **Install Yarn** (if not already installed)
+2. **Install Yarn** (if not already installed)
    ```bash
    npm install -g yarn
    # or enable corepack (Node.js 16.10+)
    corepack enable
    ```
 
-4. **Install dependencies**
+3. **Install dependencies**
    ```bash
    yarn install
    ```
 
-5. **Start development server**
+4. **Start development server**
    ```bash
    yarn dev
    ```
@@ -151,6 +146,8 @@ This application demonstrates proficiency in building **modern, cloud-native web
 
 ### Project Structure
 
+> **Note:** This repository contains the application code in a nested directory structure (`AndrewsProjectsThree/task-tracker-cloud-v2/`). This organization allows for potential multi-project management within the repository.
+
 ```
 task-tracker-cloud-v2/
 ├── AndrewsProjectsThree/
@@ -170,7 +167,7 @@ task-tracker-cloud-v2/
 │       ├── public/               # Static assets
 │       ├── package.json          # Project dependencies
 │       └── vite.config.js        # Vite configuration
-└── README.md                     # This file
+└── README.md                     # Repository root README (this file)
 ```
 
 ## 🎓 Learning Resources
