@@ -32,9 +32,9 @@ This project demonstrates proficiency in modern web development, cloud computing
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **React 19.2** - Latest React with modern hooks and features
-- **Vite 7.2** - Next-generation frontend tooling for blazing fast builds
-- **Recharts 3.6** - Composable charting library for data visualization
+- **React 19.x** - Latest React with modern hooks and features
+- **Vite 7.x** - Next-generation frontend tooling for blazing fast builds
+- **Recharts 3.x** - Composable charting library for data visualization
 - **AWS Amplify UI React** - Pre-built UI components for AWS integration
 
 ### Backend & Cloud Infrastructure
@@ -123,15 +123,22 @@ yarn --version
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Andrew112/task-tracker-cloud-v2.git
-   cd task-tracker-cloud-v2/AndrewsProjectsThree/task-tracker-cloud-v2
+   cd task-tracker-cloud-v2
+   ```
+   
+   > **Note:** This repository has a nested structure. The main project is located in `AndrewsProjectsThree/task-tracker-cloud-v2/`
+
+2. **Navigate to the project directory**
+   ```bash
+   cd AndrewsProjectsThree/task-tracker-cloud-v2
    ```
 
-2. **Install dependencies**
+3. **Install dependencies**
    ```bash
    yarn install
    ```
 
-3. **Start development server** (Frontend only)
+4. **Start development server** (Frontend only)
    ```bash
    yarn dev
    ```
@@ -217,10 +224,10 @@ The application features a clean, modern interface with:
 ## 📈 Scalability
 
 Built with scalability in mind:
-- Serverless architecture scales automatically
-- DynamoDB handles millions of requests
-- CloudFront CDN for global content delivery
+- Serverless architecture scales automatically with demand
+- DynamoDB handles millions of requests per second
 - GraphQL subscriptions for efficient real-time updates
+- AWS Amplify Hosting provides CloudFront CDN for global content delivery (when deployed)
 
 ---
 
