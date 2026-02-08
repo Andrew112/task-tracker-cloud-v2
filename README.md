@@ -1,4 +1,4 @@
-# Task Tracker Cloud v2
+# Task Tracker Cloud 
 
 > **A modern, cloud-native real-time analytics dashboard built with React and AWS Amplify**
 
